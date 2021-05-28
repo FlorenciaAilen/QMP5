@@ -16,7 +16,7 @@ public class Usuario {
         if(usuario.guardarropas.contains(guardarropa)){
             guardarropa.agregarPrendaSugerida(prenda);
         } else {
-            throw new Exception("El no tiene ese guardarropas guardado");
+            throw new Exception("El usuario no tiene ese guardarropas guardado");
         }
     }
 

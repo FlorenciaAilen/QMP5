@@ -14,7 +14,7 @@ public class SugerenciaPrenda {
         this.estaAceptada = true;
     }
 
-    public void (rechazarSugerencia){
+    public void rechazarSugerencia(){
         this.estaAceptada = false;
     }
 }

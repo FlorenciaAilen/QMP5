@@ -1,10 +1,17 @@
 package ar.edu.utn.frba.dds.QMP;
 
 import java.util.*;
+import static java.util.Objects.requireNonNull;
 
 public class Guardarropa {
+    public TipoDeGuardarropas tipoGuardarropas;
     public Set prendas = new HashSet<Prenda>();
     public Set prendasSugeridas = new HashSet<SugerenciaPrenda>();
+
+    Guardarropa(TipoDeGuardarropas tipoGuardarropas){
+        this.tipoGuardarropas = requireNonNull(tipoGuardarropas,"Por favor agregar un tipo de Guardarropa");
+    }
+
 
     public void agregarPrendaSugerida(Prenda prenda){
         prendasSugeridas.add(new SugerenciaPrenda(prenda));
